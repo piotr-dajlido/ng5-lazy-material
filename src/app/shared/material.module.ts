@@ -66,7 +66,7 @@ import {
     MatTabsModule,
     MatToolbarModule,
     MatTooltipModule,
-    MatStepperModule,
+    MatStepperModule
   ],
   exports: [
     MatAutocompleteModule,
@@ -99,7 +99,7 @@ import {
     MatTabsModule,
     MatToolbarModule,
     MatTooltipModule,
-    MatStepperModule,
+    MatStepperModule
   ]
 })
 export class MaterialModule {

@@ -7,10 +7,12 @@ import {ActivatedRoute, Router} from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-
+  loading = true;
   ngOnInit(): void {
     setTimeout(() => {
-      this.router.navigate(['login']);
+      this.router.navigate(['login']).then(() =>{
+        this.loading = false;
+      });
     }, 3000);
   }
 
