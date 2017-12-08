@@ -1,0 +1,19 @@
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: inherit;
+  .container {
+    max-width: 350px;
+    & > mat-card {
+      & > * {
+        width: 100%;
+      }
+      & mat-card-actions {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
